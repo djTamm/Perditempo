@@ -1,0 +1,89 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
+  <asmv1:assemblyIdentity name="Hangman.exe" version="1.0.0.0" publicKeyToken="46498db54b703ded" language="neutral" processorArchitecture="msil" type="win32" />
+  <application />
+  <entryPoint>
+    <assemblyIdentity name="Hangman" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+    <commandLine file="Hangman.exe" parameters="" />
+  </entryPoint>
+  <trustInfo>
+    <security>
+      <applicationRequestMinimum>
+        <PermissionSet Unrestricted="true" ID="Custom" SameSite="site" />
+        <defaultAssemblyRequest permissionSetReference="Custom" />
+      </applicationRequestMinimum>
+      <requestedPrivileges xmlns="urn:schemas-microsoft-com:asm.v3">
+        <!--
+          UAC Manifest Options
+          If you want to change the Windows User Account Control level replace the
+          requestedExecutionLevel node with one of the following.
+
+        <requestedExecutionLevel  level="asInvoker" uiAccess="false" />
+        <requestedExecutionLevel  level="requireAdministrator" uiAccess="false" />
+        <requestedExecutionLevel  level="highestAvailable" uiAccess="false" />
+
+         If you want to utilize File and Registry Virtualization for backward
+         compatibility then delete the requestedExecutionLevel node.
+    -->
+        <requestedExecutionLevel level="asInvoker" uiAccess="false" />
+      </requestedPrivileges>
+    </security>
+  </trustInfo>
+  <dependency>
+    <dependentOS>
+      <osVersionInfo>
+        <os majorVersion="5" minorVersion="1" buildNumber="2600" servicePackMajor="0" />
+      </osVersionInfo>
+    </dependentOS>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="preRequisite" allowDelayedBinding="true">
+      <assemblyIdentity name="Microsoft.Windows.CommonLanguageRuntime" version="4.0.30319.0" />
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="AxInterop.WMPLib.dll" size="53760">
+      <assemblyIdentity name="AxInterop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>xeU/AwkRIkmZtPWqqjkziiFoH4/slyg79lTnI2kQ8Ts=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Hangman.exe" size="5250008">
+      <assemblyIdentity name="Hangman" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>BE+GQ0A73YB/E+tmiS9RAqByWxMdV7YhxCyKxRVqf9k=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <dependency>
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="Interop.WMPLib.dll" size="330752">
+      <assemblyIdentity name="Interop.WMPLib" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
+      <hash>
+        <dsig:Transforms>
+          <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+        </dsig:Transforms>
+        <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+        <dsig:DigestValue>/A40iXySjgHxsrWsGxFnrwz0CGG5Yj8q59HTZ4KsksE=</dsig:DigestValue>
+      </hash>
+    </dependentAssembly>
+  </dependency>
+  <file name="Hangman.exe.config" size="189">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R+Wg8QGvQVHX8T0ta/qbhH1bXkqY0fRnS3wBV3J0bN8=</dsig:DigestValue>
+    </hash>
+  </file>
+<publisherIdentity name="CN=LAPTOP-1KI66MLL\Asus" issuerKeyHash="286b173a7afa2544b45ca57b73c27770b282cddb" /><Signature Id="StrongNameSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>MjbKogsLPi7Tty5NIQj7MvNO7RUk7PPgIaxmfWzUohA=</DigestValue></Reference></SignedInfo><SignatureValue>WkWisfapQDBjidgn78LYPYk+lSWhELODzhCtJBnreO/p2E2zYV6qjxU9d+AE6NZsAWF7d7cebgzyrKqZwwky7KepQibIpol0iv0WqBNKK/oNXrSYeUeZXuMF6PURCptviX/anK10xauj56UdDuv0OC1Dz7NwkDiH4KhyFWkT3C4=</SignatureValue><KeyInfo Id="StrongNameKeyInfo"><KeyValue><RSAKeyValue><Modulus>l5KaFkTUv3GwaGBs+09bOxhdL9BCagGpv0KGtMcpXWc0tWytmKBLCjfUZeBqXrluaObGzkzHGS5p8JJa/14ScEl6AWgmVoTqsEyxt5Yafp5/wzdKGWzSVMxLhSvT+oiryjXgQ913tr+DFuzigWZ+li8oBoK0PZXoJ2gPQf9zQLE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><msrel:RelData xmlns:msrel="http://schemas.microsoft.com/windows/rel/2005/reldata"><r:license xmlns:r="urn:mpeg:mpeg21:2003:01-REL-R-NS" xmlns:as="http://schemas.microsoft.com/windows/pki/2005/Authenticode"><r:grant><as:ManifestInformation Hash="10a2d46c7d66ac21e0f3ec2415ed4ef332fb08214d2eb7d32e3e0b0ba2ca3632" Description="" Url=""><as:assemblyIdentity name="Hangman.exe" version="1.0.0.0" publicKeyToken="46498db54b703ded" language="neutral" processorArchitecture="msil" type="win32" /></as:ManifestInformation><as:SignedBy /><as:AuthenticodePublisher><as:X509SubjectName>CN=LAPTOP-1KI66MLL\Asus</as:X509SubjectName></as:AuthenticodePublisher></r:grant><r:issuer><Signature Id="AuthenticodeSignature" xmlns="http://www.w3.org/2000/09/xmldsig#"><SignedInfo><CanonicalizationMethod Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /><SignatureMethod Algorithm="http://www.w3.org/2000/09/xmldsig#rsa-sha256" /><Reference URI=""><Transforms><Transform Algorithm="http://www.w3.org/2000/09/xmldsig#enveloped-signature" /><Transform Algorithm="http://www.w3.org/2001/10/xml-exc-c14n#" /></Transforms><DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" /><DigestValue>qAWWbj+jEloD8T5yis90LYqzb0OWz2k0hI+xWjs9NgY=</DigestValue></Reference></SignedInfo><SignatureValue>Mr/td7jet+WcgDuzQ3Dk5CtutGeJL6cC5Sj6YnnQ96sDxtVoFdnixwhYFjEQAriZmoYjp825He8q+1mwXVosp1g0omV7zmZE+56QzVUt93YMfWUHo9dewfB6Vv3cuIrlBJPDNXWBnpVmElZXmOehnI37Ntj8gQgvK9o3dao4ZlE=</SignatureValue><KeyInfo><KeyValue><RSAKeyValue><Modulus>l5KaFkTUv3GwaGBs+09bOxhdL9BCagGpv0KGtMcpXWc0tWytmKBLCjfUZeBqXrluaObGzkzHGS5p8JJa/14ScEl6AWgmVoTqsEyxt5Yafp5/wzdKGWzSVMxLhSvT+oiryjXgQ913tr+DFuzigWZ+li8oBoK0PZXoJ2gPQf9zQLE=</Modulus><Exponent>AQAB</Exponent></RSAKeyValue></KeyValue><X509Data><X509Certificate>MIIB6TCCAVKgAwIBAgIQfXY380QdALlFSqOwHUBU1DANBgkqhkiG9w0BAQsFADAzMTEwLwYDVQQDHigATABBAFAAVABPAFAALQAxAEsASQA2ADYATQBMAEwAXABBAHMAdQBzMB4XDTIwMDkwOTA4MDAzNVoXDTIxMDkwOTE0MDAzNVowMzExMC8GA1UEAx4oAEwAQQBQAFQATwBQAC0AMQBLAEkANgA2AE0ATABMAFwAQQBzAHUAczCBnzANBgkqhkiG9w0BAQEFAAOBjQAwgYkCgYEAl5KaFkTUv3GwaGBs+09bOxhdL9BCagGpv0KGtMcpXWc0tWytmKBLCjfUZeBqXrluaObGzkzHGS5p8JJa/14ScEl6AWgmVoTqsEyxt5Yafp5/wzdKGWzSVMxLhSvT+oiryjXgQ913tr+DFuzigWZ+li8oBoK0PZXoJ2gPQf9zQLECAwEAATANBgkqhkiG9w0BAQsFAAOBgQATofm8d/aV1nixuQQWfPCRZIO5nt5Ufwj0jBuHpvziyKvq2UQ9x6ncmzBuPjkoJx/Ba56Uhlk8MNRkuN4QiyA3ZtwvP6awje21Amj59YfwzOwaKvGOma3uCOTMxKiTWUFN0VljGZte6l2n9EVj6pFWTZp97faF63RFJ/fPwNjhnw==</X509Certificate></X509Data></KeyInfo></Signature></r:issuer></r:license></msrel:RelData></KeyInfo></Signature></asmv1:assembly>
