@@ -1,7 +1,10 @@
 # Perditempo
-Progetto di esame per il corso di PMO
-NOME E COGNOME: TAMARA DURDEVIC
+Progetto di esame per il corso di PMO 
+
+NOME E COGNOME: TAMARA DURDEVIC 
+
 MATRICOLA: 299279
+
 SPECIFICA:
 Il progetto realizza due giocchini popolari, l’utente deve avere la possibilità di scegliere tra i due
 oppure chiudere il programma.
